@@ -5,9 +5,331 @@
     <title>Design For Developers starter</title>
     <link rel="stylesheet" href="stylesheets/normalize.css" type="text/css" />
     <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Prociono' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
-    <h1>Starter kit for Design for Developers</h1>
+    <nav class="navbar nav-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" class="col-md-6">Design for Developers Notes</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Principles & Basics</a></li>
+          <li><a href="#">Grid System</a></li>
+          <li><a href="#">Typography</a></li>
+          <li><a href="#">Color</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="section">
+        <h1>Principles & Basics</h1>
+        <h3>Principles of visual design</h3>
+        <p>There are 7 main principles of visual design:</p>
+        <ol>
+          <li>
+            <p><strong>Alignment</strong>: Keeps edges aligned. This helps determin relationships within a page.</p>
+          </li>
+          <li>
+            <p><strong>Emphasis</strong>: Is attention grabbing. This helps determin the focal point of a page.</p>
+          </li>
+          <li>
+            <p><strong>Hierarchy</strong>: Should be recognizable. This ties in with emphasis.</p>
+          </li>
+          <li>
+            <p><strong>Consistency</strong>: Keeps similar elements presented in similar ways. This helps prevent confusion.</p>
+          </li>
+          <li>
+            <p><strong>White Space</strong>: Helps rest the eyes. This is the spacing between elements of a page.</p>
+          </li>
+          <li>
+            <p><strong>Balance</strong>: All elements have optical equilibrium.</p>
+            <p>There are 2 types:</p>
+              <ul>
+                <li><p>Symetrical<p></li>
+                <li><p>Asymetrical</p></li>
+              </ul>
+          </li>
+          <li>
+            <p><strong>Unity</strong>: Keeps all elements in agreement. This presents all elements of a page as a cohesive whole.</p>
+          </li>
+        </ol>
+      </div>
+      <hr>
+      <div class="next_section">
+        <h1>Grid Systems</h1>
+        <h3 class="subheader">12 unit grid</h3>    
+        <div class="row">
+          <div class="col-md-9">
+            <p>The 12 unit grid system should be used at all times. This helps with <em>algining</em> elements of a page and keeps the page <em>balanced</em> and <em>consistent</em>.</p>
+            <p>The grid consists of 3 parts:</p>
+            <ol>
+              <li><p><strong>Unit</strong>: the basic building block.</p></li>
+              <li><p><strong>Gutter</strong>: the space between each unit.</p></li>
+              <li><p><strong>Column</strong>: the units and gutters grouped to form a grouping of content.</p></li>
+            </ol>
+          </div>
+          <a href="http://pixelwhip.github.io/layout-design-patterns/img/ss-guttered-grid.png" target="_blank">
+            <img src="img/12grid.png" style="width:200px; display:block; margin-left:auto; margin-right:auto;" ></img>
+          </a>     
+        </div><!-- /row -->
+      </div>
+      <hr>
+      <div class="next_section">
+        <h1>Typography</h1>
+        <h3 class="subheader">Conveying a website's message</h3>
+        <p>Typography makes up 95% of web design and helps convey a site's message. It consists of <em>typeface</em> and <em>font</em>.</p>
+        <p><strong>Typeface</strong>: a stylistic choice. The font name (i.e. Helvetica)</p>
+        <p><strong>Font</strong>: a set of the typeface. (i.e. Hevlvetica bold 12pt)</p>
+        <h4 class="subheader">Other Definitions to Note</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <p><strong>Median</strong>: the line where most lowercase letters terminate.</p>
+            <p><strong>Baseline</strong>: the line where most letters sit.</p>
+            <p><strong>X-height</strong>: the distance between the median and baseline. The greater the distance, the more readable.</p>
+            <p><strong>Ascender</strong>: the portion of a character that extends above the median.</p>
+            <p><strong>Descender</strong>: the portion of a character that extends below the baseline.</p>
+          </div>
+          <div class="col-md-6">
+            <p><strong>Counter</strong>: an area that is entirely or partially closed by a letter form.</p>
+            <p><strong>Line height</strong>: the distance between baselines.</p>
+            <p><strong>Line length</strong>: the max length of a single line of text before the next word wraps underneath.</p>
+            <p><strong>Kerning</strong>: the spacing between letters.</p>
+            <p><strong>Letter-spacing</strong>: the space between a group of letters.</p>
+          </div>
+        </div><!-- /row -->
+        <h4 class="subheader">Type Basics</h4>
+        <div class="row" style="margin-bottom:30px;">
+          <div class="col-md-3 col-md-offset-3">
+            <h1 class="serif" style="margin-top:0px;">Serif</h1>
+            <ul>
+              <li><p>Emulates handwrittedn letters</p></li>
+              <li><p>Older, more traditional look</p></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h1 class="sans" style="margin-top:0px;">Sans-Serif</h1>
+            <ul>
+              <li><p>Looks more machine typed</p></li>
+              <li><p>More modern look</p></li>
+            </ul>
+          </div>
+        </div><!-- /row -->
+        <h4 class="subheader">How to Choose & Pair Typefaces</h4>
+        <p>When choosing a typeface you should ask yourself:</p>
+        <ul>
+          <li><p>What message do I want to tell?</p></li>
+          <li><p>What style would help deliver this message?</p></li>
+          <li><p>Is this legible?</p></li>
+        </ul>
+        <p>When pairing typefaces they must contrast eachother, or just stick to one typeface and vary it's weight.</p>
+        <h4 class="subheader">Ways to Create Hierarchy</h4>
+        <div class="row">
+          <div class="col-md-3">
+            <ul>
+              <li><p style="font-weight:bold;">Weight</p></li>
+              <li><p style="font-style:italic">Italics</p></li>
+              <li><p style="text-transform:uppercase;">All Caps</p></li>
+            <ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li><a href="#"><p style="text-decoration:underline;">Underline (links only)</p></a></li>
+              <li><p style="color:orangered;">Color</p></li>
+              <li><p>White Space</p></li>
+            </ul>
+          </div>
+        </div><!-- /row-->
+        <h4 class="subheader">Best Practices</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Web safe typefaces:</p>
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li><p style="font-family:Helvetica;">Helvetica</p></li>
+                  <li><p style="font-family:Verdana;">Verdana</p></li>
+                  <li><p style="font-family:Lucida Grande;">Lucida Grande</p></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li><p style="font-family:Georgia;">Georgia</p></li>
+                  <li><p style="font-family:Times New Roman;">Times New Roman</p></li>
+                </ul>
+              </div>
+            </div><!-- /row -->
+          </div>
+          <div class="col-md-6">
+            <p>Free embeddable typefaces:</p>
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li><p style="font-family:'Prociono', sefif;">Prociono</p></li>
+                  <li><p style="font-family:'Old Standard TT', serif;">Old Standard TT</p></li>
+                  <li><p style="font-family:'Goudy Bookletter 1911', serif;">Goudy Bookletter 1911</p></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li><p style="font-family:'PT Sans', sans-serif;">PT Sans</p></li>
+                  <li><p style="font-family:'Droid Sans', sans-serif;">Droid Sans</p></li>
+                  <li><p style="font-family:'Open Sans', sans-serif;">Open Sans</p></li>
+                </ul>
+              </div>
+            </div><!-- /row -->
+          </div>
+        </div><!-- /row -->
+        <div class="row" style="margin-top:30px">
+          <div class="col-md-6">
+            <p>Use real quotes: <strong>&ldquo;  &rdquo;  &lsquo;  &rsquo;</strong> (inspect elements for html entities) </p>
+          </div>
+          <div class="col-md-6">
+            <p>Use proper elipsis: <strong>&hellip;</strong> (inspect element for html entity)</p>
+          </div>
+        </div><!-- /row -->
+        <div class="row" style="margin-top:30px;">
+          <div class="col-md-4">
+            <p>Use the hyphen (<strong>-</strong>) appropriately for:</p>
+            <ul>
+              <li><p>Justification</p></li>
+              <li><p>Prefix / Suffix</p></li>
+              <li><p>Spelling out words</p></li>
+              <li><p>Joining modifiers</p></li>
+              <li><p>Compound names</p></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p>Use the en dash (<strong>&ndash;</strong>) appropriately for:</p>
+            <ul>
+              <li><p>Ranges of values</p></li>
+              <li><p>Relationships</p></li>
+              <li><p>Compound adjectives</p></li>
+            </ul>
+            <p>The en dash empahsizes connection</p>
+          </div>
+          <div class="col-md-4">
+            <p>Use the em dash (<strong>&mdash;</strong>) appropriately for:</p>
+            <ul>
+              <li><p>Pause in thought</p></li>
+            </ul>
+            <p>The em dash indicates an unfinished sentence</p>
+          </div>
+        </div><!-- /row -->
+      </div>
+      <hr>
+      <div class="next_section">
+        <h1 style="color:#339999;">Color</h1>
+        <h3 class="subheader" style="color:#999999;">Evoking a particular feeling</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <p><span class="vocab">Hue</span>: a color/shade discernable by basic colors (red, green, blue, etc.)</p>
+            <p><span class="vocab">Value, shade</span>: the amount of black in a color.</p>
+            <p><span class="vocab">Tint, tone</span>: the amount of white in a color.</p>
+            <p><span class="vocab">Primary colors</span>: yellow, blue, red.</p>
+            <p><span class="vocab">Secondary colors</span>: green, purple, orange.</p>
+            <p><span class="vocab">Neutral colors</span>: black, white, brown &ndash; supporting colors.</p>
+            <p><span class="vocab">Complimentary colors</span>: colors that are across from each other on the wheel.</p>
+            <p><span class="vocab">Analogous colors</span>: colors next to each other on the wheel.</p>
+          </div>
+          <div class="col-md-6">
+            <img style="display:block;margin-left:auto;margin-right:auto;" src="img/colorwheel.gif"/>
+          </div>
+        </div><!-- /row -->
+        <div class="row" style="margin-top:30px;">
+          <div class="col-md-6">
+            <p>Cool Colors (left side):</p>
+            <ul>
+              <li><p>Green, blue, purple</p></li>
+              <li><p>Calm, stable, recede on a page</p></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <p>Warm Colors (right side):</p>
+            <ul>
+              <li><p>Yellow, orange, red</p></li>
+              <li><p>Energetic, draws attention, more forward on a page</p></li>
+            </ul>
+          </div>
+        </div><!-- /row -->
+        <h4 class="subheader" style="color:#996699;">Colors Have Meaning</h4>
+        <p>Colors mean different things in different cultures and have certain emotions/feelings attached to them.</p>
+        <div class="row">
+          <div class="col-md-4">
+            <p style="color:blue;">Blue</p>
+            <ul>
+              <li><p>Confidence</p></li>
+              <li><p>Stability</p></li>
+              <li><p>Professional</p></li>
+              <li><p>Honor</p></li>
+              <li><p>Trust</p></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p style="color:white;"><span style="background-color:black;">White</span></p>
+            <ul>
+              <li><p>Purity</p></li>
+              <li><p>Cleanliness</p></li>
+              <li><p>Innocence</p></li>
+              <li><p>Soft</p></li>
+              <li><p>Weddings</p></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p>Black</p>
+            <ul>
+              <li><p>Serious</p></li>
+              <li><p>Death</p></li>
+              <li><p>Mysterious</p></li>
+              <li><p>Sexy</p></li>
+              <li><p>Sophisticated</p></li>
+            </ul>
+          </div>
+        </div><!-- /row -->
+        <div class="row">
+          <div class="col-md-4">
+            <p style="color:yellow;"><span style="background-color:grey;">Yellow</span></p>
+            <ul>
+              <li><p>Hope</p></li>
+              <li><p>Joy</p></li>
+              <li><p>Excitement</p></li>
+              <li><p>Warning</p></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p style="color:green;">Green</p>
+            <ul>
+              <li><p>Growth</p></li>
+              <li><p>Wealth</p></li>
+              <li><p>Optism</p></li>
+              <li><p>Harmony</p></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p style="color:red;">Red</p>
+            <ul>
+              <li><p>Power</p></li>
+              <li><p>Love</p></li>
+              <li><p>Danger</p></li>
+              <li><p>Courage</p></li>
+            </ul>
+          </div>
+        </div><!-- /row -->
+        <h4 class="subheader" style="color:#996699;">Rules of Thumb</h4>
+        <p>Only user one (sometimes two) dominant colors. Using two should contrast each other.</p>
+        <p>Support and enhance dominant colors with supporting colors. Adjust the value, tone, brightness, and saturation.</p>
+        <p>Keep all links and headers of a site the same same color.</p>
+      </div>
+      <hr>
+    </div><!-- /container -->
   </body>
 </html>

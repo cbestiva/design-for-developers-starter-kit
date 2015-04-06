@@ -2,3 +2,35 @@ body {
   background: white;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+.section {
+  margin-top: 70px;
+  margin-bottom: 200px;
+}
+
+.next_section {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+h3.subheader {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+h4.subheader {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.serif {
+  font-family: serif;
+}
+
+.sans {
+  font-family: sans-serif;
+}
+
+.vocab {
+  color: #FF6600;
+}
