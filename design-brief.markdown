@@ -3,7 +3,7 @@
 ## A brief summary of the business / site goals.
 *What problems are you trying to solve? What is the purpose of the app? (2-3 sentences)*
 Noel and his father, Benjamin, are both attorneys who would like to a website built for their practice.
-They would like to inform people who they are, the services they provide, and allow clients to contact them throug their site.
+They would like to inform people who they are, the services they provide, and allow clients to contact them through their site.
 
 ## The key users.
 *Describe behaviors, expectation, knowledge, or other characteristics. (One sentence each)*
